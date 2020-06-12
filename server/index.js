@@ -1,3 +1,5 @@
+//deleted frmo line 12 package.json --ignore public --ignore client & webpack -w
+
 const express = require('express')
 const app = express()
 const PORT = process.env.PORT || 3000

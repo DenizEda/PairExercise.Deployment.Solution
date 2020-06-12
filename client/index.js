@@ -9,7 +9,9 @@ class App extends React.Component {
 
   componentDidMount = async () => {
     try {
+      console.log('inside did mount')
       const { data } = await axios.get('/api/users')
+      console.log('data', data)
       this.setState({ users: data })
     } catch (e) {
       console.error(e)
